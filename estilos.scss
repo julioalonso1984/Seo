@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$color1: rgb(31, 32, 110);
+$color2: rgb(219, 35, 35);
+$color3: rgb(128, 128, 128);
+
+.asociacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 50px 600px 200px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "encabezado encabezado encabezado"
+        "link link link"
+        "dedicamos ubicacion foto"
+        "pie pie pie";
+}
+
+.encabezado {
+    grid-area: encabezado;
+    margin: 0;
+    background-color: $color1;
+    color: $color2;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    span{
+        color: $color3;
+    }
+}
+
+.link {
+    grid-area: link;
+    margin: 0;
+    background-color: $color3;
+    li {
+        display: inline-block;
+        a{ 
+            color: $color2;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px black;
+            margin-left: 20px;
+        }
+        :hover{
+            color: black;
+        }
+    }
+}
+
+.dedicamos {
+    background-color: $color2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: dedicamos;
+        .btn--dedicamos1 {
+            grid-area: 1 / 1 / 3 / 2;
+        }
+        .btn--dedicamos2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .btn--dedicamos3 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+}
+$redes: (
+    dedicamos1: 30px,
+    dedicamos2: 20px,
+    dedicamos3: 15px
+
+);
+
+// cremos el bucle para usar los valores del mapa
+
+@each $dedicamos, $font in $redes{
+    .btn--#{$dedicamos} {
+        background-color: #333;
+        height: 160px;
+        border: 2px solid #111;
+        text-align: center;
+        font-size: $font;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px orange;
+        font-family: cursive;
+        border-radius: 20px;
+        padding: 15px;
+
+    }
+}    
+
+$green: green;
+$alto: 30px;
+
+.ubicacion {
+    grid-area: ubicacion;
+    font-size: $alto;
+    color: beige;
+    text-shadow: 15px black;
+    text-align: center;
+    border: 5px solid black;
+    h2{
+        text-shadow: 3px 3px 3px black;
+    }
+}
+@mixin sizes ($height , $width, $bcolor) {
+    height: $height;
+    width: $width;
+    background-color: $bcolor;
+
+}
+.ubicacion1 {
+    @include sizes(300px, 100%, $color3);
+}
+
+.ubicacion2 {
+    @include sizes (300px, 100%, transparent);
+
+    color: white;
+    text-align: center;
+
+}
+
+.foto {
+    grid-area: foto;
+    background-image: url(./img/mona-cecilia.jpg);
+    background-position: center;
+    background-size: cover;
+    p{
+        font-size: 40px;
+        color: beige;
+        text-shadow: 5px 5px 5px black;
+    }
+}
+
+$large: 50px;
+.footer {
+    background-color: $color1;
+    width: 100%;
+    padding: 20px;
+    text-align: center
+}
+
+.footer--copyright{
+    
+    @extend .footer;
+    border-width: 3px;
+    border: 5px solid black;
+    color: #fff;
+    font-size: $large;
+}
+
+.pie {
+    grid-area: pie;
+}

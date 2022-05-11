@@ -1,0 +1,476 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header{
+    background: repeating-linear-gradient(-135deg, rgb(211, 12, 12), rgb(9, 9, 253) 20%, rgb(20, 1, 1) 50%);
+}
+.logo{
+    background-image: url(./imagenes/logoelefante.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.navbar-brand {
+    color: rgb(255, 178, 36) !important;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px rgba(209, 57, 57, 0.295);
+            animation-duration: 2s;
+            animation-name: hola;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes hola {
+            0%{
+                opacity: 0.5;
+            }
+
+            100%{
+                opacity: 1;
+            }
+}
+.navbar a:hover{
+    background-color: rgba(62, 62, 63, 0.24);
+}
+.jumbotron{
+    background-image: url(./imagenes/paisaje.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: rgb(16, 16, 153);
+    text-shadow: 5px 5px 5px red;
+    margin-bottom: 0;
+}
+.jumbotron p{
+    font-size: 20px;
+    margin-right: 15%;
+}
+/* inicio fila 1 */
+.fila1{
+    height: auto;
+    background-color: #000;
+}
+.fila1 div{
+    height: 450px;
+}
+.col1{
+    background-color: black;
+}
+.col2 { 
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    background-image: url(./imagenes/mona-cecilia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.col2 h2{
+    color: rgb(16, 16, 153);
+    text-shadow: 5px 5px 5px red;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 5px;
+    width: 70%;
+}
+.col2 section div{
+    height: 60px;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-right: 35px;
+    border: none;
+}   
+.cajas{
+    text-align: center;
+    align-items: center;
+}
+.item a{
+    color: rgb(16, 16, 153);
+    text-shadow: 1px 1px 1px rgb(223, 201, 201);
+}
+.col2 section div:hover{
+    background-color: rgba(3, 3, 3, 0.589);
+}
+.col2 section div a:hover{
+    color: beige;
+}
+.col3 { 
+
+    background-image: url(./imagenes/jirafas.jpg);
+    
+
+}
+.col3 h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(16, 16, 153);
+    text-shadow: 5px 5px 5px red;
+}
+
+.noticias1{
+    color: rgb(201, 201, 212);
+    text-shadow: 3px 3px 3px rgb(108, 90, 190);
+    font-size: 25px;
+    margin: 5px;
+    margin-left: 20px;
+
+}
+.noticias1:hover{
+    color: rgb(57, 57, 211);
+}
+.col4{
+    background-color: rgb(97, 97, 180);
+    text-align: center;
+    color: rgb(16, 16, 153);
+    text-shadow: 5px 5px 5px red;
+}
+.ubicacion1{
+    margin-left: 5%;
+}
+/* fin fila 1 */
+/* inicio fila 2 */
+.fila2{
+    text-align: center;
+    color: rgb(16, 16, 153);
+    text-shadow: 5px 5px 5px red;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.fila2 div{
+    height: 450px;
+    border: 4px solid black;
+}
+.col5{
+    background-color: rgb(23, 21, 153);
+}
+.col6{
+    background-color: rgb(190, 26, 26);
+}
+.col7{
+    background-color: rgb(21, 24, 21);
+}
+/* fin fila 2 */
+/* footer */
+.footer{
+    background: repeating-linear-gradient(-135deg, rgb(211, 12, 12), rgb(9, 9, 253) 20%, rgb(20, 1, 1) 50%);
+    text-align: center;
+    height: 150px;
+    margin: 0;
+}
+.footer h4{
+    color: rgb(16, 16, 153);
+    text-shadow: 5px 5px 5px red;
+}
+.footer a{
+    color: white;
+    font-size: 40px;
+}
+footer a:hover{
+    color: gray;
+    transition: 1s;
+}
+.footer p{
+    background-color: black;
+    color: white;
+}
+
+
+/* Estilos página Integrantes */
+.grupo{
+    background-image: url(./imagenes/caras/fotogrupal.jpeg);
+    height: 800px;
+    background-size: cover;
+    background-position: top;    
+}
+
+.tarjeta img{
+    height: 500px;
+    width: 98%;
+    text-align: center;
+}
+/* fin pagina integrantes */
+/* inicio pagina consultas */
+form{
+    background-image: url(./imagenes/animales.jpg);
+    background-position: top;
+    background-size: cover;
+    font-size: 30px;
+    color: rgb(11, 16, 85);
+    text-shadow: 2px 2px 2px black;
+}
+form input::placeholder {
+    color: beige !important; 
+}
+form div{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+form div input{
+    background-color: transparent !important;
+    color: beige !important;
+}
+.state{
+    color: beige;
+}
+form div textarea{
+    background-color: transparent !important;
+    color: beige !important;
+}
+form button{
+    margin-left: 10%;
+}
+.state{
+    background-color: transparent !important;
+}
+#enviar{
+    color: beige;
+    background-color: rgb(11, 16, 85);
+}
+
+/*  fin pagina consultas */
+/* inicio pagina denunciar */
+.denunciar{
+    background-image: url(./imagenes/animales.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 800px;
+}
+.pasos{
+
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.pasos li{
+    margin-top: 10px;
+    font-size: 45px;
+    color: rgb(11, 16, 85);;
+    text-shadow: 5px 5px 5px beige;
+}
+/* fin denunciar */
+/* tabla */
+.table{
+    height: 300px;
+    background-image: url(./imagenes/galeria/foto9.webp);
+    background-position: center;
+    background-size: cover;
+}
+.table th{
+    font-size: 35px;
+    color: rgb(11, 16, 85);
+    text-shadow: 2px 2px 2px beige;
+}
+.table td{
+    font-size: 30px;
+    color: rgb(11, 16, 85);
+    text-shadow: 2px 2px 2px beige;
+}
+/* fin tabla */
+/* inicio galería */
+
+.animales{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px;
+    gap: 10px;
+}
+
+.fotos{
+    margin: 2px;
+    border: 2px solid #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 3s ease-in-out;
+}
+.foto1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(./imagenes/galeria/foto1.jpg);
+}
+.foto2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(./imagenes/galeria/foto2.jpg);
+}
+.foto3{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(./imagenes/galeria/foto3.webp);
+}
+.foto4{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background-image: url(./imagenes/galeria/foto4.jpg);
+    background-position: top;
+}
+.foto5{
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-image: url(./imagenes/galeria/foto5.jpg);
+    background-position: top;
+}
+.foto6{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    background-image: url(./imagenes/galeria/foto6.jpeg);
+}
+.foto7{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    background-image: url(./imagenes/galeria/foto7.jpg);
+}
+.foto8{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    background-image: url(./imagenes/galeria/foto8.jpeg);
+}
+.foto9{
+    grid-column: 1/3;
+    grid-row: 7/8;
+    background-image: url(./imagenes/galeria/foto9.webp);
+
+}
+.foto10{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    background-image: url(./imagenes/galeria/foto10.png);
+}
+
+@media only screen and (min-width: 600px){
+    .animales{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px 250px 250px 250px;
+    }
+    .foto1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .foto2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .foto3{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .foto4{
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+    .foto5{
+        grid-column: 3/4;
+        grid-row: 4/6;
+        }
+    .foto6{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    .foto7{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .foto8{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .foto9{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    
+    }
+    .foto10{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        background-image: url(./imagenes/galeria/foto10_1.jpg);
+    }
+}
+@media only screen and (min-width: 1024px){
+    .animales{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px 250px 250px;
+    }
+}
+.foto1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.foto1:hover{
+    transform: rotate(360deg);
+}
+.foto2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.foto2:hover{
+    transform: translateX(250px) translateY(0px);
+}
+.foto3{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.foto3:hover{
+    transform: translateX(0px) translateY(125px);
+}
+.foto4{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.foto4:hover{
+    transform: skewX(-50deg);
+}
+.foto5{
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+.foto5:hover{
+    transform: skewY(-50deg);
+}
+.foto6{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.foto6:hover{
+    transform: translateX(0px) translateY(-125px);
+}
+.foto7{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.foto7:hover{
+    transform: translateX(-250px) translateY(0px);
+}
+.foto8{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.foto8:hover{
+    transform: rotate(-360deg);
+}
+.foto9{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.foto9:hover{
+    transform: rotatex(180deg);
+}
+.foto10{
+    grid-column: 3/5;
+    grid-row: 4/5;
+    background-image: url(./imagenes/galeria/foto10.png);
+}
+.foto10:hover{
+    transform: rotateY(180deg);
+}

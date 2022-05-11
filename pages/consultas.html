@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../pages.css">
+    <meta name="description" content="consultas para defensa animal">
+    <meta name="keywords" content="consulta, dudas, defensa animal">
+    <meta name="language" content="spanish">
+    <meta name="city" content="mendoza">
+    <meta name="country" content="argentina">
+    <meta name="doc-type" content="web page">
+    <title>Consultas</title>
+</head>
+
+<body>
+    
+    <!-- navbar inicio -->
+    <div class="container-fluid" id="header">
+        <div class="row">
+            <div class="col-1 logo"></div>
+            <nav class="navbar col-11 navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Consultas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./denunciar.html">¿Cómo hacer una denuncia?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./galeria.html">Galería de animales libres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./integrantes.html">Integrantes de la Asociación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./legislacion.html">Leyes en defensa de animales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- navbar fin -->
+    <!-- Formulario -->
+    
+    <form class="row g-0">
+      <div class="col-md-6">
+        <label for="formGroupExampleInput" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre completo">
+      </div>
+      <div class="col-md-6">
+        <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su apellido">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese su correo electrónico">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">País</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="País donde reside">
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">Provincia</label>
+        <select id="inputState" class="form-select state">
+          <option selected>Mendoza</option>
+          <option>Buenos Aires</option>
+          <option>San Juan</option>
+          <option>San Luis</option>
+          <option>La Rioja</option>
+        </select>
+      </div>
+      <div class="mb-10 col-6">
+        <label for="exampleFormControlTextarea1" class="form-label">¿Cuál es su consulta?</label>
+        <textarea class="form-control duda" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Acepto los términos
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+      </div>
+    </form>
+
+    <!-- fin formulario -->
+
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
